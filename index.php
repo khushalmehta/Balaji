@@ -163,9 +163,9 @@ incididunt ut labore et dolore</p>
 <div class="container-fluid">
 <div class="row">
 <div class="col-lg-3">
-<div class="product-large set-bg" data-setbg="img/products/women-large.jpg">
-<h2>Women’s</h2>
-<a href="#">Discover More</a>
+<div class="product-large set-bg single-banner" data-setbg="img/wires1.jpg">
+
+<a  href="#">Explore More</a>
 </div>
 </div>
 <div class="col-lg-8 offset-lg-1">
@@ -181,24 +181,22 @@ incididunt ut labore et dolore</p>
 ?>
 <div class="product-item">
 
- <div class="pi-pic">
+ <div class="pi-pic single-banner container">
 
 <img style="width: 100px;height: 200px;" src="Admin/<?php echo $row['pimage'];?>"  alt="">
 <!--<div class="sale">Sale</div>-->
-<div class="icon">
-<i class="icon_heart_alt"></i>
-</div>
-<ul>
-<li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-<li class="quick-view"><a href="#">View Details</a></li>
-<li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
-</ul>
+
+
+<center>
+<h4 style="top: 40%;" class=" overlay"><a style="background-color: rgb(4,4,4,0.8);font-size: 20px;padding: 8px;border-radius: 25px;font-weight: bolder;" href="#">View Details</a></h4>
+</center>
+
 </div>
 <div class="pi-text">
 <div class="catagory-name"><?php echo $row['pcategory'];?></div>
-<a href="#">
+
 <h5><?php echo $row['price'];?></h5>
-</a>
+
 <div class="product-price">
 <?php echo $row['pname'];?>
 
