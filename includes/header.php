@@ -13,20 +13,20 @@
 <header class="header-section fixed-top">
   <div class="nav-item">
     <div class="container">
-      <div class="nav-depart">
+      <div class="nav-depart me-auto">
       <a href="index.php" class="logo me-auto"><img src="img/shreeBalajiEnterprises.png" alt=""></a>
       </div>
       <nav class="nav-menu mobile-menu">
         <ul>
           <li class="active"><a href="index.php">Home</a></li>
           <li><a href="about.php">About Us</a>
-            <ul class="dropdown">
+            <ul id="dropdown" class="dropdown">
               <li><a href="about.php">About Us</a></li>
               <li><a href="broucher.php?file=shree-balaji-enterprises" target="_blank">Download Broucher</a></li>
             </ul>
           </li>
           <li><a href="products.php">Our Products</a>
-            <ul class="dropdown">
+            <ul class="dropdown" id="dropdown">
               <li><a href="products.php">All Products</a></li>
               <?php
               while($cat=mysqli_fetch_array($select_cat)){
@@ -34,7 +34,7 @@
                 $select_prod=mysqli_query($con,$select_prod);
             ?>
               <li><a href="#" ><?php echo $cat['pcategory'];?></a>
-                <ul class="dropdown">
+                <ul id="dropdown">
                   <?php
                 while($prod=mysqli_fetch_array($select_prod)){
                ?>
@@ -49,7 +49,8 @@
            ?>
             </ul>
           </li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="blog.php">Blog</a></li>
+        <li><a href="contact.php">Contact</a>
         </ul>
       </nav>
       <div id="mobile-menu-wrap"></div>

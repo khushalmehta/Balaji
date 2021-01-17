@@ -308,7 +308,7 @@ ul, ol {
     padding: 10px;
     top: 0;
   }
-  .header-section .logo {
+  #header .logo {
     font-size: 28px;
   }
 }
@@ -404,7 +404,8 @@ ul, ol {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  position: relative
+  position: relative;
+  float: right;
 }
 
 .nav-item .nav-menu li {
@@ -425,7 +426,7 @@ ul, ol {
   color: #fff;
   border-right: 2px solid #3b3b3b;
   text-transform: uppercase;
-  padding: 16px 42px 15px;
+  padding: 16px 42px 22px;
   -webkit-transition: all .3s;
   -o-transition: all .3s;
   transition: all .3s
@@ -438,7 +439,7 @@ ul, ol {
 .nav-item .nav-menu li:hover .dropdown {
   opacity: 1;
   visibility: visible;
-  top: 52px
+  top: 58px
 }
 
 .nav-item .nav-menu li .dropdown {
@@ -3453,7 +3454,7 @@ ul, ol {
   }
 
   .nav-item .nav-menu li a {
-    padding: 16px 45px 15px
+    padding: 16px 25px 22px
   }
 }
 
