@@ -135,7 +135,7 @@ require 'Admin/config.php';
 
                 <img style="width: 100px;height: 200px;" src="Admin/<?php echo $row['pimage'];?>" alt="">
                 <!--<div class="sale">Sale</div>-->
-                
+
               </div>
               <div class="pi-text">
                 <div class="catagory-name"><?php echo $row['pcategory'];?></div>
@@ -463,37 +463,7 @@ require 'Admin/config.php';
   </section>
 
 
-  <div class="partner-logo">
-    <div class="container">
-      <div class="logo-carousel owl-carousel">
-        <div class="logo-item">
-          <div class="tablecell-inner">
-            <img src="img/logo-carousel/logo-1.png" alt="">
-          </div>
-        </div>
-        <div class="logo-item">
-          <div class="tablecell-inner">
-            <img src="img/logo-carousel/logo-2.png" alt="">
-          </div>
-        </div>
-        <div class="logo-item">
-          <div class="tablecell-inner">
-            <img src="img/logo-carousel/logo-3.png" alt="">
-          </div>
-        </div>
-        <div class="logo-item">
-          <div class="tablecell-inner">
-            <img src="img/logo-carousel/logo-4.png" alt="">
-          </div>
-        </div>
-        <div class="logo-item">
-          <div class="tablecell-inner">
-            <img src="img/logo-carousel/logo-5.png" alt="">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  
 
 
 <?php include('includes/footer.php') ?>
@@ -523,6 +493,5 @@ require 'Admin/config.php';
   </script>
 </body>
 
-<!-- Mirrored from preview.colorlib.com/theme/fashi/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 17 Jan 2021 07:39:19 GMT -->
 
 </html>

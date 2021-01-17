@@ -4,11 +4,14 @@
       <div class="col-lg-3">
         <div class="footer-left">
           <div class="footer-logo">
-            <a href="#"><img src="img/footer-logo.png" alt=""></a>
+            <a href="index.php" class="logo me-auto"><img src="img/shreeBalajiEnterprises.png" class="img-fluid"  alt=""></a>
           </div>
           <ul>
-            <li>Address: 60-49 Road 11378 New York</li>
-            <li>Phone: +65 11.188.888</li>
+            <li>With the progressive approach and farsightedness of our mentor<br>
+            <b>  Mr. Parmanand Sharma</b>,<br> we have successfully created several benchmarks
+              in the industry...</li>
+              <button type="button" class="btn btn-outline-light btn-sm">Read More</button>
+            <!-- <li>Phone: +65 11.188.888</li>
             <li>Email: <a href="https://preview.colorlib.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="93fbf6fffffcbdf0fcfffce1fffaf1d3f4fef2faffbdf0fcfe">[email&#160;protected]</a></li>
           </ul>
           <div class="footer-social">
@@ -16,7 +19,7 @@
             <a href="#"><i class="fa fa-instagram"></i></a>
             <a href="#"><i class="fa fa-twitter"></i></a>
             <a href="#"><i class="fa fa-pinterest"></i></a>
-          </div>
+          </div> -->
         </div>
       </div>
       <div class="col-lg-2 offset-lg-1">
