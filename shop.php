@@ -1,8 +1,16 @@
 <?php
 require 'Admin/config.php';
-    $query="select * from products";
-    $display_product=mysqli_query($con,$query);
-    $cat=mysqli_query($con,"select * from products");
+$cat=$_GET['pcategory'];
+echo $cat;
+	if($cat=="all"){
+		$query="select * from products";
+		$display_product=mysqli_query($con,$query);
+	}
+	else
+	{$query="select * from products where pcategory='$cat'";
+    $display_product=mysqli_query($con,$query);}
+    
+    $cat=mysqli_query($con,"select distinct pcategory from products");
 
 
  ?>
@@ -103,6 +111,11 @@ require 'Admin/config.php';
 </div>
 
 
+
+
+
+
+
 <section class="product-shop spad">
 <div class="container">
 <div class="row">
@@ -110,10 +123,11 @@ require 'Admin/config.php';
 <div class="filter-widget">
 <h4 class="fw-title">Categories</h4>
 <ul class="filter-catagories">
+	<li><a href="shop.php?pcategory=all">All</a></li>
 		<?php
             while($r=mysqli_fetch_array($cat)){
 ?>
-<li><a href="#"><?php echo $r['pcategory']; ?></a></li>
+<li><a href="shop.php?pcategory=<?php echo $r['pcategory'] ?>"><?php echo $r['pcategory']; ?></a></li>
 
 <?php } ?>
 </ul>
@@ -138,7 +152,7 @@ require 'Admin/config.php';
 
 <div class="pi-pic">
 <img style="width: 100px;height: 200px;" src="Admin/<?php echo $row['pimage'];?>" alt="">
-<div class="sale pp-sale">Sale</div>
+
 <div class="icon">
 <i class="icon_heart_alt"></i>
 </div>
