@@ -147,7 +147,7 @@ require 'Admin/config.php';
       <div class="row" >
         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
           <div class="" style="text-align: center;">
-            <i class="fa fa-briefcase" aria-hidden="true" style="font-size: 24px;box-shadow: 0px 6px 15px rgba(16, 110, 234, 5.12);padding: 30px;margin-right: 15px;color: #e7ab3c;border-radius: 50px;"></i>
+            <i class="fa fa-briefcase" aria-hidden="true" ></i>
             <div class="card-body" >
               <h5 class="card-title" style="color:#fff;">Nature Of Business</h5>
               <p class="card-text" style="color:#fff;">Wholesale Traders</p>
@@ -157,7 +157,7 @@ require 'Admin/config.php';
         </div>
         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
           <div class="" style="text-align: center;">
-            <i class="fa fa-users" aria-hidden="true" style="font-size: 24px;box-shadow: 0px 6px 15px rgba(16, 110, 234, 5.12);padding: 30px;margin-right: 15px;color: #e7ab3c;border-radius: 50px;"></i>
+            <i class="fa fa-users" aria-hidden="true"  ></i>
             <div class="card-body">
               <h5 class="card-title" style="color:#fff;">Total Number Of Employees</h5>
                 <p class="card-text" style="color:#fff;">26 To 50 People</p>
@@ -167,7 +167,7 @@ require 'Admin/config.php';
         </div>
         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
           <div class="" style="text-align: center;">
-            <i class="fa fa-building-o" aria-hidden="true" style="font-size: 24px;box-shadow: 0px 6px 15px rgba(16, 110, 234, 5.12);padding: 30px;margin-right: 15px;color: #e7ab3c;border-radius: 50px;"></i>
+            <i class="fa fa-building-o" aria-hidden="true"  ></i>
             <div class="card-body">
               <h5 class="card-title" style="color:#fff;">Year Of Estabilishment</h5>
               <p class="card-text" style="color:#fff;">2012</p>
@@ -180,7 +180,7 @@ require 'Admin/config.php';
       <div class="row" >
         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
           <div class="" style="text-align: center;">
-            <i class="fa fa-gavel" aria-hidden="true" style="font-size: 24px;box-shadow: 0px 6px 15px rgba(16, 110, 234, 5.12);padding: 30px;margin-right: 15px;color: #e7ab3c;border-radius: 50px;"></i>
+            <i class="fa fa-gavel" aria-hidden="true"  ></i>
             <div class="card-body">
               <h5 class="card-title" style="color:#fff;">Legal Status Of Firm</h5>
               <p class="card-text" style="color:#fff;">Individual Proprietor</p>
@@ -190,7 +190,7 @@ require 'Admin/config.php';
         </div>
         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
           <div class="" style="text-align: center;">
-            <i class="fa fa-money" aria-hidden="true" style="font-size: 24px;box-shadow: 0px 6px 15px rgba(16, 110, 234, 5.12);padding: 30px;margin-right: 15px;color: #e7ab3c;border-radius: 50px;"></i>
+            <i class="fa fa-money" aria-hidden="true"  ></i>
             <div class="card-body">
               <h5 class="card-title" style="color:#fff;">Annual Turnover</h5>
                 <p class="card-text" style="color:#fff;">Rs. 25 to 50 Crore</p>
@@ -200,7 +200,7 @@ require 'Admin/config.php';
         </div>
         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
           <div class="" style="text-align: center;">
-            <i class="fa fa-file-text-o" aria-hidden="true" style="font-size: 24px;box-shadow: 0px 6px 15px rgba(16, 110, 234, 5.12);padding: 30px;margin-right: 15px;color: #e7ab3c;border-radius: 50px;"></i>
+            <i class="fa fa-file-text-o" aria-hidden="true"  ></i>
             <div class="card-body">
               <h5 class="card-title" style="color:#fff;">GST No.</h5>
               <p class="card-text" style="color:#fff;">27CIEPS5499B3ZT</p>
@@ -212,12 +212,11 @@ require 'Admin/config.php';
       </div>
   </section>
 
-
   <section id="testimonials" class="testimonials">
 
           <div class="container" style="max-width:100%;">
       <div id="testimonial_095" class="carousel slide testimonial_095_indicators testimonial_095_control_button thumb_scroll_x swipe_x ps_easeOutSine" data-ride="carousel" data-pause="hover" data-interval="5000" data-duration="2000">
-        <div class="section-title">
+        <div class="section-title carousel-inner">
           <h3 style="color:#fff; font-weight: 800;"><span style="color:#e7ab3c;">Testimonials</span></h3>
           <br />
           <h5 style="color:#fff;">What users feels about us</h5>

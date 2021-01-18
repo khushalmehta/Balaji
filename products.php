@@ -84,6 +84,32 @@ $cat=$_GET['pcategory'];
 </div>
 
 
+ <style type="text/css">
+ 	.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /*background-color: rgb(13,110,253,0.1) ;*/
+  color: black;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+
+.container:hover .overlay {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+ 	
+ </style>
 
 
 <div class="col-lg-9 order-1 order-lg-2">
@@ -98,16 +124,16 @@ $cat=$_GET['pcategory'];
 	
 <div class="product-item">
 
-<div class="pi-pic single-banner ">
+<div class="pi-pic single-banner container">
 
 <img style="width: 100px;height: 200px;" src="Admin/<?php echo $row['pimage'];?>"  alt="">
 <!--<div class="sale">Sale</div>-->
 
-<div class="container">
-<center >
+
+<center>
 <h4 style="top: 40%;"  class="overlay"><a style="background-color: rgb(4,4,4,0.8); color: #e7ab3c;font-size: 15px;padding:8px;border-radius: 20px;font-weight: bolder;" href="product-details.php?id=<?php echo $row['id'] ?>">View Details</a></h4>
 </center>
-</div>
+
 </div>
 <div class="pi-text">
 <div class="catagory-name"><?php echo $row['pcategory'];?></div>

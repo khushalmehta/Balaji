@@ -1,4 +1,8 @@
-
+<?php
+    require 'config.php';
+    $query="select distinct pcategory from products";
+    $cat=mysqli_query($con,$query);
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -24,6 +28,10 @@
 </head>
 
 <body>
+
+
+
+	
   <!-- container section start -->
   <section id="container" class="">
     <!--header start-->
@@ -45,6 +53,14 @@
           </div>
         </div>
         <!-- Form validations -->
+
+<script type="text/javascript">
+	function show(){
+		document.getElementById("p").style.visibility="";
+	}
+</script>
+
+
         <div class="row">
           <div class="col-lg-12">
             <section class="panel">
@@ -64,17 +80,14 @@
                       <label for="pcat" class="control-label col-lg-2"> Product Category<span class="required">*</span></label>
                       <div class="col-lg-10">
                         <select id="pcat" name="pcat">
-                           <option>Submersible Wires</option>
-                           <option>Copper Wires</option>
-                           <option>Cables</option>
-                           <option>Varnish</option>
-                           <option>Ball Bearing</option>
-                           <option>SKF Grease</option>
-                           <option>Submersible Papers</option>
-                           <option>Omega Rubber Tube</option>
-                           <option>Fibre Glass Sleeves</option>
-                         </select>
-
+                        	<?php
+            while($r=mysqli_fetch_array($cat)){
+?>
+                           <option><?php echo $r['pcategory'] ?></option>
+                           <?php } ?>
+                         </select>&nbsp;&nbsp;&nbsp;
+                         <button onclick="show()" style="border: none;color: blue;background: transparent;">Add New Category</button>
+                         <input id="p" style="visibility: hidden;border-width: 0.1px;border-radius: 8%" type="text" name="pcat">
                       </div>
                     </div>
                     <div class="form-group ">

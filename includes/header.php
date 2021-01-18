@@ -14,7 +14,7 @@
   <div class="nav-item">
     <div class="container">
       <div class="nav-depart me-auto">
-      <a href="index.php" class="logo me-auto"><img src="img/shreeBalajiEnterprises.png" alt=""></a>
+      <a href="index.php" class="logo me-auto"><img src="img/shreeBalajiEnterprises.png" alt=""><h4>Shree Balaji <span>Enterprises</span></h4></a>
       </div>
       <nav class="nav-menu mobile-menu">
         <ul>
@@ -33,20 +33,12 @@
                 $select_prod="select * from products where pcategory like '".$c['pcategory']."'";
                 $select_prod=mysqli_query($con,$select_prod);
             ?>
-              <li><a href="#" ><?php echo $c['pcategory'];?></a>
-                <ul id="dropdown">
-                  <?php
-                while($prod=mysqli_fetch_array($select_prod)){
-               ?>
-               <li><a href="products-details.php?pid=<?php echo $prod['id'];?>" ><?php echo $prod['pname'];?></a></li>
-                 <?php
-               }
-                  ?>
-                </ul>
+              <li><a href="products.php?pcategory=<?php echo $c['pcategory'];?>" ><?php echo $c['pcategory'];?></a>
+              <?php } ?>
+
+               
               </li>
-              <?php
-        }
-           ?>
+              
             </ul>
           </li>
           <li><a href="blog.php">Blog</a></li>
