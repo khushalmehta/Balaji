@@ -11,10 +11,10 @@ require 'config.php';
         
         $q = "INSERT INTO contact(pcategory,name,email,mobile,city,addr,message) VALUES ('$pc','$name','$email','$mobile','$city','$addr','$message')";
         if(mysqli_query($con, $q)){
-                echo "<script>alert('Message Sent Successfully'); window.location.href='../index.php';</script>";
+                echo "<script>alert('Message Sent Successfully'); window.location.href='contact.php';</script>";
         }
         else{
-            echo "<script>alert('Message NOT Sent, Try again!'); window.location.href='../index.php';</script>";
+            echo "<script>alert('Message NOT Sent, Try again!'); window.location.href='contact.php';</script>";
         }
     }
 ?>

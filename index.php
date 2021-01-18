@@ -32,437 +32,236 @@ require 'Admin/config.php';
   <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
   <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
   <link rel="stylesheet" href="css/style.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-
 
 <?php include('includes/header.php') ?>
 
 
   <section class="hero-section">
     <div class="hero-items owl-carousel">
-      <div class="single-hero-items set-bg" data-setbg="img/hero-1.jpg">
+      <div class="single-hero-items set-bg" data-setbg="img/c3.png">
         <div class="container">
           <div class="row">
             <div class="col-lg-5">
-              <span>Bag,kids</span>
-              <h1>Black friday</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore</p>
-              <a href="#" class="primary-btn">Shop Now</a>
+            
+              <h1 style="color: #e7ab3c">Shree Balaji Enterprises</h1>
+              <p style="color: white;font-size: 25px;">Wholesale Trader of Submersible Wire & Copper Winding Wire from Pune</p>
+              <a href="#" class="primary-btn">Our Products</a>
+              <i class="fa fa-play-circle" style="font-size:48px;color:#e7ab3c"></i>
             </div>
           </div>
-          <div class="off-card">
-            <h2>Sale <span>50%</span></h2>
-          </div>
+          
         </div>
       </div>
-      <div class="single-hero-items set-bg" data-setbg="img/hero-2.jpg">
+      <div class="single-hero-items set-bg" data-setbg="img/cables.jpg">
         <div class="container">
           <div class="row">
             <div class="col-lg-5">
-              <span>Bag,kids</span>
-              <h1>Black friday</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore</p>
-              <a href="#" class="primary-btn">Shop Now</a>
+            
+              <h1 style="color: #e7ab3c">Shree Balaji Enterprises</h1>
+              <p style="color: white;font-size: 20px;">Wholesale Trader of Submersible Wire & Copper Winding Wire from Pune</p>
+              <a href="#" style="border-radius: 20px" class="primary-btn">Our Products</a>&nbsp;
+                <i class="fa fa-play-circle" style="font-size:48px;color:#e7ab3c"></i>
             </div>
           </div>
-          <div class="off-card">
-            <h2>Sale <span>50%</span></h2>
-          </div>
+          
         </div>
       </div>
     </div>
-  </section>
+  </section><br>
 
 
-  <div class="banner-section spad">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="single-banner">
-            <img src="img/banner-1.jpg" alt="">
-            <div class="inner-text">
-              <h4>Men’s</h4>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="single-banner">
-            <img src="img/banner-2.jpg" alt="">
-            <div class="inner-text">
-              <h4>Women’s</h4>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="single-banner">
-            <img src="img/banner-3.jpg" alt="">
-            <div class="inner-text">
-              <h4>Kid’s</h4>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
 
   <section class="women-banner spad">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-3">
-          <div class="product-large set-bg" data-setbg="img/products/women-large.jpg">
-            <h2>Women’s</h2>
-            <a href="#">Discover More</a>
-          </div>
-        </div>
-        <div class="col-lg-8 offset-lg-1">
-          <div class="filter-control">
-            <ul>
-              <li class="active">Our Products</li>
+<div class="container-fluid">
+<div class="row">
+<div class="col-lg-3">
+<div class="product-large set-bg single-banner" data-setbg="img/wires1.jpg">
 
+<a  href="products.php?pcategory=all">Explore More</a>
+</div>
+</div>
+<div class="col-lg-8 offset-lg-1">
+
+<div class="filter-control">
+            <ul>
+              <li class="active" style="font-weight: 800;font-size: 29px">Our <span style="color:#e7ab3c;">Products</span></li>
+              <h5 style="font-size: 22px;"><br /> <b><u>Shree Balaji <span style="color:#e7ab3c;">Enterprises</span></u></b> is a dependable name in the market as wholesaler and trader of Automobile Products, established in 2012. </h5>
+                <hr>
             </ul>
           </div>
-          <div class="product-slider owl-carousel">
-            <?php
+
+<div class="product-slider owl-carousel">
+  <?php
             while($row=mysqli_fetch_array($display_product)){
 ?>
-            <div class="product-item">
+<div class="product-item">
 
-              <div class="pi-pic">
+ <div class="pi-pic single-banner container">
 
-                <img style="width: 100px;height: 200px;" src="Admin/<?php echo $row['pimage'];?>" alt="">
-                <!--<div class="sale">Sale</div>-->
+<img style="width: 100px;height: 200px;" src="Admin/<?php echo $row['pimage'];?>"  alt="">
+<!--<div class="sale">Sale</div>-->
 
-              </div>
-              <div class="pi-text">
-                <div class="catagory-name"><?php echo $row['pcategory'];?></div>
-                <a href="#">
-                  <h5><?php echo $row['price'];?></h5>
-                </a>
-                <div class="product-price">
-                  <?php echo $row['pname'];?>
 
-                </div>
-              </div>
+<center>
+<h4 style="top: 40%;"  class="overlay"><a style="background-color: rgb(4,4,4,0.8); color: #e7ab3c;font-size: 15px;padding:8px;border-radius: 20px;font-weight: bolder;" href="product-details.php?id=<?php echo $row['id'] ?>">View Details</a></h4>
+</center>
+
+</div>
+<div class="pi-text">
+<div class="catagory-name"><?php echo $row['pcategory'];?></div>
+
+<h5><?php echo $row['price'];?></h5>
+
+<div class="product-price">
+<?php echo $row['pname'];?>
+
+</div>
+</div>
+</div>
+<?php } ?>
+
+
+
+</div>
+</div>
+</div>
+</div>
+</section>
+
+ <section  class="deal-of-week bg-dark">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <h3 style="color:#fff; font-weight: 800;">About<span style="color:#e7ab3c;"> Us</span></h3>
+        <br />
+        <h5 style="color:#fff;">We are reckoned as leading wholesaler and trader of Enameled & Submersible copper winding wire & insulating Products.
+           Our product range is widely appreciated for its high quality, corrosion proof, smooth finish and competitive prices.</h5>
+<hr>
+        </div>
+
+      <div class="row" >
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <div class="" style="text-align: center;">
+            <i class="fa fa-briefcase" aria-hidden="true" style="font-size: 24px;box-shadow: 0px 6px 15px rgba(16, 110, 234, 5.12);padding: 30px;margin-right: 15px;color: #e7ab3c;border-radius: 50px;"></i>
+            <div class="card-body" >
+              <h5 class="card-title" style="color:#fff;">Nature Of Business</h5>
+              <p class="card-text" style="color:#fff;">Wholesale Traders</p>
+              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
             </div>
-            <?php } ?>
           </div>
         </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <div class="" style="text-align: center;">
+            <i class="fa fa-users" aria-hidden="true" style="font-size: 24px;box-shadow: 0px 6px 15px rgba(16, 110, 234, 5.12);padding: 30px;margin-right: 15px;color: #e7ab3c;border-radius: 50px;"></i>
+            <div class="card-body">
+              <h5 class="card-title" style="color:#fff;">Total Number Of Employees</h5>
+                <p class="card-text" style="color:#fff;">26 To 50 People</p>
+              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <div class="" style="text-align: center;">
+            <i class="fa fa-building-o" aria-hidden="true" style="font-size: 24px;box-shadow: 0px 6px 15px rgba(16, 110, 234, 5.12);padding: 30px;margin-right: 15px;color: #e7ab3c;border-radius: 50px;"></i>
+            <div class="card-body">
+              <h5 class="card-title" style="color:#fff;">Year Of Estabilishment</h5>
+              <p class="card-text" style="color:#fff;">2012</p>
+              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+            </div>
+          </div>
+        </div>
+
       </div>
-    </div>
+      <div class="row" >
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <div class="" style="text-align: center;">
+            <i class="fa fa-gavel" aria-hidden="true" style="font-size: 24px;box-shadow: 0px 6px 15px rgba(16, 110, 234, 5.12);padding: 30px;margin-right: 15px;color: #e7ab3c;border-radius: 50px;"></i>
+            <div class="card-body">
+              <h5 class="card-title" style="color:#fff;">Legal Status Of Firm</h5>
+              <p class="card-text" style="color:#fff;">Individual Proprietor</p>
+              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <div class="" style="text-align: center;">
+            <i class="fa fa-money" aria-hidden="true" style="font-size: 24px;box-shadow: 0px 6px 15px rgba(16, 110, 234, 5.12);padding: 30px;margin-right: 15px;color: #e7ab3c;border-radius: 50px;"></i>
+            <div class="card-body">
+              <h5 class="card-title" style="color:#fff;">Annual Turnover</h5>
+                <p class="card-text" style="color:#fff;">Rs. 25 to 50 Crore</p>
+              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <div class="" style="text-align: center;">
+            <i class="fa fa-file-text-o" aria-hidden="true" style="font-size: 24px;box-shadow: 0px 6px 15px rgba(16, 110, 234, 5.12);padding: 30px;margin-right: 15px;color: #e7ab3c;border-radius: 50px;"></i>
+            <div class="card-body">
+              <h5 class="card-title" style="color:#fff;">GST No.</h5>
+              <p class="card-text" style="color:#fff;">27CIEPS5499B3ZT</p>
+              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+            </div>
+          </div>
+        </div>
+
+      </div>
   </section>
 
 
-  <section class="deal-of-week set-bg spad" data-setbg="img/time-bg.jpg">
-    <div class="container">
-      <div class="col-lg-6 text-center">
+  <section id="testimonials" class="testimonials">
+
+          <div class="container" style="max-width:100%;">
+      <div id="testimonial_095" class="carousel slide testimonial_095_indicators testimonial_095_control_button thumb_scroll_x swipe_x ps_easeOutSine" data-ride="carousel" data-pause="hover" data-interval="5000" data-duration="2000">
         <div class="section-title">
-          <h2>Deal Of The Week</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed<br /> do ipsum dolor sit amet,
-            consectetur adipisicing elit </p>
-          <div class="product-price">
-            $35.00
-            <span>/ HanBag</span>
+          <h3 style="color:#fff; font-weight: 800;"><span style="color:#e7ab3c;">Testimonials</span></h3>
+          <br />
+          <h5 style="color:#fff;">What users feels about us</h5>
+  <hr>
           </div>
-        </div>
-        <div class="countdown-timer" id="countdown">
-          <div class="cd-item">
-            <span>56</span>
-            <p>Days</p>
+          <ol class="carousel-indicators">
+              <li data-target="#testimonial_095" data-slide-to="0" class="active"></li>
+              <li data-target="#testimonial_095" data-slide-to="1"></li>
+              <li data-target="#testimonial_095" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                  <div class="testimonial_095_slide">
+                    <img id="timg" src="img/t1.png" alt="">
+                    <h5 id="h5">Rahul Kumar</h5>
+                      <p id="p"><i class="bx bxs-quote-alt-left quote-icon-left"></i>  He is our Front end developer who is an enthusiastic tech learner, curious to learn.
+                        His interests lie in the field of automobiles, coding etc. His affable personality helps him build a positive bond with people.  <i class="bx bxs-quote-alt-right quote-icon-right"></i></p>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <div class="testimonial_095_slide"> <img id="timg" src="img/t1.png" alt="">
+                    <h5 id="h5">Khushal Mehta</h5>
+                    <p id="p"><i class="bx bxs-quote-alt-left quote-icon-left"></i>  He is our Front end developer who is an enthusiastic tech learner, curious to learn.
+                      His interests lie in the field of automobiles, coding etc. His affable personality helps him build a positive bond with people.  <i class="bx bxs-quote-alt-right quote-icon-right"></i></p>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <!-- Text Layer -->
+                  <div class="testimonial_095_slide"> <img id="timg" src="img/t1.png" alt="">
+                    <h5 id="h5">Kick Batouski</h5>
+                    <p id="p"><i class="bx bxs-quote-alt-left quote-icon-left"></i>  He is our Front end developer who is an enthusiastic tech learner, curious to learn.
+                      His interests lie in the field of automobiles, coding etc. His affable personality helps him build a positive bond with people.  <i class="bx bxs-quote-alt-right quote-icon-right"></i></p>
+                  </div>
+              </div>
           </div>
-          <div class="cd-item">
-            <span>12</span>
-            <p>Hrs</p>
-          </div>
-          <div class="cd-item">
-            <span>40</span>
-            <p>Mins</p>
-          </div>
-          <div class="cd-item">
-            <span>52</span>
-            <p>Secs</p>
-          </div>
-        </div>
-        <a href="#" class="primary-btn">Shop Now</a>
+          <!-- Left Control -->
+           <a class="carousel-control-prev" href="#testimonial_095" data-slide="prev"> <span class="fa fa-chevron-left"></span> </a>
+           <!-- Right Control -->
+           <a class="carousel-control-next" href="#testimonial_095" data-slide="next"> <span class="fa fa-chevron-right"></span> </a>
       </div>
-    </div>
-  </section>
-
-
-  <section class="man-banner spad">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-8">
-          <div class="filter-control">
-            <ul>
-              <li class="active">Clothings</li>
-              <li>HandBag</li>
-              <li>Shoes</li>
-              <li>Accessories</li>
-            </ul>
-          </div>
-          <div class="product-slider owl-carousel">
-            <div class="product-item">
-              <div class="pi-pic">
-                <img src="img/products/man-1.jpg" alt="">
-                <div class="sale">Sale</div>
-                <div class="icon">
-                  <i class="icon_heart_alt"></i>
-                </div>
-                <ul>
-                  <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-                  <li class="quick-view"><a href="#">+ Quick View</a></li>
-                  <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
-                </ul>
-              </div>
-              <div class="pi-text">
-                <div class="catagory-name">Coat</div>
-                <a href="#">
-                  <h5>Pure Pineapple</h5>
-                </a>
-                <div class="product-price">
-                  $14.00
-                  <span>$35.00</span>
-                </div>
-              </div>
-            </div>
-            <div class="product-item">
-              <div class="pi-pic">
-                <img src="img/products/man-2.jpg" alt="">
-                <div class="icon">
-                  <i class="icon_heart_alt"></i>
-                </div>
-                <ul>
-                  <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-                  <li class="quick-view"><a href="#">+ Quick View</a></li>
-                  <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
-                </ul>
-              </div>
-              <div class="pi-text">
-                <div class="catagory-name">Shoes</div>
-                <a href="#">
-                  <h5>Guangzhou sweater</h5>
-                </a>
-                <div class="product-price">
-                  $13.00
-                </div>
-              </div>
-            </div>
-            <div class="product-item">
-              <div class="pi-pic">
-                <img src="img/products/man-3.jpg" alt="">
-                <div class="icon">
-                  <i class="icon_heart_alt"></i>
-                </div>
-                <ul>
-                  <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-                  <li class="quick-view"><a href="#">+ Quick View</a></li>
-                  <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
-                </ul>
-              </div>
-              <div class="pi-text">
-                <div class="catagory-name">Towel</div>
-                <a href="#">
-                  <h5>Pure Pineapple</h5>
-                </a>
-                <div class="product-price">
-                  $34.00
-                </div>
-              </div>
-            </div>
-            <div class="product-item">
-              <div class="pi-pic">
-                <img src="img/products/man-4.jpg" alt="">
-                <div class="icon">
-                  <i class="icon_heart_alt"></i>
-                </div>
-                <ul>
-                  <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-                  <li class="quick-view"><a href="#">+ Quick View</a></li>
-                  <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
-                </ul>
-              </div>
-              <div class="pi-text">
-                <div class="catagory-name">Towel</div>
-                <a href="#">
-                  <h5>Converse Shoes</h5>
-                </a>
-                <div class="product-price">
-                  $34.00
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 offset-lg-1">
-          <div class="product-large set-bg m-large" data-setbg="img/products/man-large.jpg">
-            <h2>Men’s</h2>
-            <a href="#">Discover More</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <div class="instagram-photo">
-    <div class="insta-item set-bg" data-setbg="img/insta-1.jpg">
-      <div class="inside-text">
-        <i class="ti-instagram"></i>
-        <h5><a href="#">colorlib_Collection</a></h5>
-      </div>
-    </div>
-    <div class="insta-item set-bg" data-setbg="img/insta-2.jpg">
-      <div class="inside-text">
-        <i class="ti-instagram"></i>
-        <h5><a href="#">colorlib_Collection</a></h5>
-      </div>
-    </div>
-    <div class="insta-item set-bg" data-setbg="img/insta-3.jpg">
-      <div class="inside-text">
-        <i class="ti-instagram"></i>
-        <h5><a href="#">colorlib_Collection</a></h5>
-      </div>
-    </div>
-    <div class="insta-item set-bg" data-setbg="img/insta-4.jpg">
-      <div class="inside-text">
-        <i class="ti-instagram"></i>
-        <h5><a href="#">colorlib_Collection</a></h5>
-      </div>
-    </div>
-    <div class="insta-item set-bg" data-setbg="img/insta-5.jpg">
-      <div class="inside-text">
-        <i class="ti-instagram"></i>
-        <h5><a href="#">colorlib_Collection</a></h5>
-      </div>
-    </div>
-    <div class="insta-item set-bg" data-setbg="img/insta-6.jpg">
-      <div class="inside-text">
-        <i class="ti-instagram"></i>
-        <h5><a href="#">colorlib_Collection</a></h5>
-      </div>
-    </div>
   </div>
 
 
-  <section class="latest-blog spad">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="section-title">
-            <h2>From The Blog</h2>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-4 col-md-6">
-          <div class="single-latest-blog">
-            <img src="img/latest-1.jpg" alt="">
-            <div class="latest-text">
-              <div class="tag-list">
-                <div class="tag-item">
-                  <i class="fa fa-calendar-o"></i>
-                  May 4,2019
-                </div>
-                <div class="tag-item">
-                  <i class="fa fa-comment-o"></i>
-                  5
-                </div>
-              </div>
-              <a href="#">
-                <h4>The Best Street Style From London Fashion Week</h4>
-              </a>
-              <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="single-latest-blog">
-            <img src="img/latest-2.jpg" alt="">
-            <div class="latest-text">
-              <div class="tag-list">
-                <div class="tag-item">
-                  <i class="fa fa-calendar-o"></i>
-                  May 4,2019
-                </div>
-                <div class="tag-item">
-                  <i class="fa fa-comment-o"></i>
-                  5
-                </div>
-              </div>
-              <a href="#">
-                <h4>Vogue's Ultimate Guide To Autumn/Winter 2019 Shoes</h4>
-              </a>
-              <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="single-latest-blog">
-            <img src="img/latest-3.jpg" alt="">
-            <div class="latest-text">
-              <div class="tag-list">
-                <div class="tag-item">
-                  <i class="fa fa-calendar-o"></i>
-                  May 4,2019
-                </div>
-                <div class="tag-item">
-                  <i class="fa fa-comment-o"></i>
-                  5
-                </div>
-              </div>
-              <a href="#">
-                <h4>How To Brighten Your Wardrobe With A Dash Of Lime</h4>
-              </a>
-              <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="benefit-items">
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="single-benefit">
-              <div class="sb-icon">
-                <img src="img/icon-1.png" alt="">
-              </div>
-              <div class="sb-text">
-                <h6>Free Shipping</h6>
-                <p>For all order over 99$</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="single-benefit">
-              <div class="sb-icon">
-                <img src="img/icon-2.png" alt="">
-              </div>
-              <div class="sb-text">
-                <h6>Delivery On Time</h6>
-                <p>If good have prolems</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="single-benefit">
-              <div class="sb-icon">
-                <img src="img/icon-1.png" alt="">
-              </div>
-              <div class="sb-text">
-                <h6>Secure Payment</h6>
-                <p>100% secure payment</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
+      </section>
 
   
 
@@ -492,685 +291,6 @@ require 'Admin/config.php';
 
     gtag('config', 'UA-23581568-13');
   </script>
-
-<div id="preloder">
-<div class="loader"></div>
-</div>
- 
-<header class="header-section">
-
-
-<div class="nav-item">
-<div class="container">
-<div class="nav-depart">
-<div class="depart-btn">
-<i class="ti-menu"></i>
-<span>All departments</span>
-<ul class="depart-hover">
-<li class="active"><a href="#">Women’s Clothing</a></li>
-<li><a href="#">Men’s Clothing</a></li>
-<li><a href="#">Underwear</a></li>
-<li><a href="#">Kid's Clothing</a></li>
-<li><a href="#">Brand Fashion</a></li>
-<li><a href="#">Accessories/Shoes</a></li>
-<li><a href="#">Luxury Brands</a></li>
-<li><a href="#">Brand Outdoor Apparel</a></li>
-</ul>
-</div>
-</div>
-<nav class="nav-menu mobile-menu">
-<ul>
-<li class="active"><a href="index.html">Home</a></li>
-<li><a href="shop.html">Shop</a></li>
-<li><a href="#">Collection</a>
-<ul class="dropdown">
-<li><a href="#">Men's</a></li>
-<li><a href="#">Women's</a></li>
-<li><a href="#">Kid's</a></li>
-</ul>
-</li>
-<li><a href="blog.html">Blog</a></li>
-<li><a href="contact.html">Contact</a></li>
-<li><a href="#">Pages</a>
-<ul class="dropdown">
-<li><a href="blog-details.html">Blog Details</a></li>
-<li><a href="shopping-cart.html">Shopping Cart</a></li>
-<li><a href="check-out.html">Checkout</a></li>
-<li><a href="faq.html">Faq</a></li>
-<li><a href="register.html">Register</a></li>
-<li><a href="login.html">Login</a></li>
-</ul>
-</li>
-</ul>
-</nav>
-<div id="mobile-menu-wrap"></div>
-</div>
-</div>
-</header>
-
-
-<section class="hero-section">
-<div class="hero-items owl-carousel">
-<div class="single-hero-items set-bg" data-setbg="img/hero-1.jpg">
-<div class="container">
-<div class="row">
-<div class="col-lg-5">
-<span>Bag,kids</span>
-<h1>Black friday</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-incididunt ut labore et dolore</p>
-<a href="#" class="primary-btn">Shop Now</a>
-</div>
-</div>
-<div class="off-card">
-<h2>Sale <span>50%</span></h2>
-</div>
-</div>
-</div>
-<div class="single-hero-items set-bg" data-setbg="img/hero-2.jpg">
-<div class="container">
-<div class="row">
-<div class="col-lg-5">
-<span>Bag,kids</span>
-<h1>Black friday</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-incididunt ut labore et dolore</p>
-<a href="#" class="primary-btn">Shop Now</a>
-</div>
-</div>
-<div class="off-card">
-<h2>Sale <span>50%</span></h2>
-</div>
-</div>
-</div>
-</div>
-</section>
-
-
-<div class="banner-section spad">
-<div class="container-fluid">
-<div class="row">
-<div class="col-lg-4">
-<div class="single-banner">
-<img src="img/banner-1.jpg" alt="">
-<div class="inner-text">
-<h4>Men’s</h4>
-</div>
-</div>
-</div>
-<div class="col-lg-4">
-<div class="single-banner">
-<img src="img/banner-2.jpg" alt="">
-<div class="inner-text">
-<h4>Women’s</h4>
-</div>
-</div>
-</div>
- <div class="col-lg-4">
-<div class="single-banner">
-<img src="img/banner-3.jpg" alt="">
-<div class="inner-text">
-<h4>Kid’s</h4>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-
-<section class="women-banner spad">
-<div class="container-fluid">
-<div class="row">
-<div class="col-lg-3">
-<div class="product-large set-bg single-banner" data-setbg="img/wires1.jpg">
-
-<a  href="#">Explore More</a>
-</div>
-</div>
-<div class="col-lg-8 offset-lg-1">
-<div class="filter-control">
-<ul>
-<li class="active">Our Products</li>
-
-</ul>
-</div>
-<div class="product-slider owl-carousel">
-	<?php
-            while($row=mysqli_fetch_array($display_product)){
-?>
-<div class="product-item">
-
- <div class="pi-pic single-banner container">
-
-<img style="width: 100px;height: 200px;" src="Admin/<?php echo $row['pimage'];?>"  alt="">
-<!--<div class="sale">Sale</div>-->
-
-
-<center>
-<h4 style="top: 40%;" class=" overlay"><a style="background-color: rgb(4,4,4,0.8);font-size: 20px;padding: 8px;border-radius: 25px;font-weight: bolder;" href="#">View Details</a></h4>
-</center>
-
-</div>
-<div class="pi-text">
-<div class="catagory-name"><?php echo $row['pcategory'];?></div>
-
-<h5><?php echo $row['price'];?></h5>
-
-<div class="product-price">
-<?php echo $row['pname'];?>
-
-</div>
-</div>
-</div>
-<?php } ?>
-<div class="product-item">
-<div class="pi-pic">
-<img src="img/products/women-2.jpg" alt="">
-<div class="icon">
-<i class="icon_heart_alt"></i>
-</div>
-<ul>
-<li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-<li class="quick-view"><a href="#">+ Quick View</a></li>
-<li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
-</ul>
-</div>
-<div class="pi-text">
-<div class="catagory-name">Shoes</div>
-<a href="#">
-<h5>Guangzhou sweater</h5>
-</a>
-<div class="product-price">
-$13.00
-</div>
-</div>
-</div>
-<div class="product-item">
-<div class="pi-pic">
-<img src="img/products/women-3.jpg" alt="">
-<div class="icon">
-<i class="icon_heart_alt"></i>
- </div>
-<ul>
-<li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-<li class="quick-view"><a href="#">+ Quick View</a></li>
-<li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
-</ul>
-</div>
-<div class="pi-text">
-<div class="catagory-name">Towel</div>
-<a href="#">
-<h5>Pure Pineapple</h5>
-</a>
-<div class="product-price">
-$34.00
-</div>
-</div>
-</div>
-<div class="product-item">
-<div class="pi-pic">
-<img src="img/products/women-4.jpg" alt="">
-<div class="icon">
-<i class="icon_heart_alt"></i>
-</div>
-<ul>
-<li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-<li class="quick-view"><a href="#">+ Quick View</a></li>
-<li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
-</ul>
-</div>
-<div class="pi-text">
-<div class="catagory-name">Towel</div>
-<a href="#">
-<h5>Converse Shoes</h5>
-</a>
-<div class="product-price">
-$34.00
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-
-
-<section class="deal-of-week set-bg spad" data-setbg="img/time-bg.jpg">
-<div class="container">
-<div class="col-lg-6 text-center">
-<div class="section-title">
-<h2>Deal Of The Week</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed<br /> do ipsum dolor sit amet,
-consectetur adipisicing elit </p>
-<div class="product-price">
-$35.00
-<span>/ HanBag</span>
-</div>
-</div>
-<div class="countdown-timer" id="countdown">
-<div class="cd-item">
-<span>56</span>
-<p>Days</p>
-</div>
-<div class="cd-item">
-<span>12</span>
-<p>Hrs</p>
-</div>
-<div class="cd-item">
-<span>40</span>
-<p>Mins</p>
-</div>
-<div class="cd-item">
-<span>52</span>
-<p>Secs</p>
-</div>
-</div>
-<a href="#" class="primary-btn">Shop Now</a>
-</div>
-</div>
-</section>
-
-
-<section class="man-banner spad">
-<div class="container-fluid">
-<div class="row">
-<div class="col-lg-8">
-<div class="filter-control">
-<ul>
-<li class="active">Clothings</li>
-<li>HandBag</li>
-<li>Shoes</li>
-<li>Accessories</li>
-</ul>
-</div>
-<div class="product-slider owl-carousel">
-<div class="product-item">
-<div class="pi-pic">
-<img src="img/products/man-1.jpg" alt="">
-<div class="sale">Sale</div>
-<div class="icon">
-<i class="icon_heart_alt"></i>
-</div>
-<ul>
-<li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-<li class="quick-view"><a href="#">+ Quick View</a></li>
-<li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
-</ul>
-</div>
-<div class="pi-text">
-<div class="catagory-name">Coat</div>
-<a href="#">
-<h5>Pure Pineapple</h5>
-</a>
-<div class="product-price">
-$14.00
-<span>$35.00</span>
-</div>
-</div>
-</div>
-<div class="product-item">
-<div class="pi-pic">
-<img src="img/products/man-2.jpg" alt="">
-<div class="icon">
-<i class="icon_heart_alt"></i>
-</div>
-<ul>
-<li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-<li class="quick-view"><a href="#">+ Quick View</a></li>
-<li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
-</ul>
-</div>
-<div class="pi-text">
-<div class="catagory-name">Shoes</div>
-<a href="#">
-<h5>Guangzhou sweater</h5>
-</a>
-<div class="product-price">
-$13.00
-</div>
- </div>
-</div>
-<div class="product-item">
-<div class="pi-pic">
-<img src="img/products/man-3.jpg" alt="">
-<div class="icon">
-<i class="icon_heart_alt"></i>
-</div>
-<ul>
-<li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-<li class="quick-view"><a href="#">+ Quick View</a></li>
-<li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
-</ul>
-</div>
-<div class="pi-text">
-<div class="catagory-name">Towel</div>
-<a href="#">
-<h5>Pure Pineapple</h5>
-</a>
-<div class="product-price">
-$34.00
-</div>
-</div>
-</div>
-<div class="product-item">
-<div class="pi-pic">
-<img src="img/products/man-4.jpg" alt="">
-<div class="icon">
-<i class="icon_heart_alt"></i>
-</div>
-<ul>
-<li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-<li class="quick-view"><a href="#">+ Quick View</a></li>
-<li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
-</ul>
-</div>
-<div class="pi-text">
-<div class="catagory-name">Towel</div>
-<a href="#">
-<h5>Converse Shoes</h5>
-</a>
-<div class="product-price">
-$34.00
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="col-lg-3 offset-lg-1">
-<div class="product-large set-bg m-large" data-setbg="img/products/man-large.jpg">
-<h2>Men’s</h2>
-<a href="#">Discover More</a>
- </div>
-</div>
-</div>
-</div>
-</section>
-
-
-<div class="instagram-photo">
-<div class="insta-item set-bg" data-setbg="img/insta-1.jpg">
-<div class="inside-text">
-<i class="ti-instagram"></i>
-<h5><a href="#">colorlib_Collection</a></h5>
-</div>
-</div>
-<div class="insta-item set-bg" data-setbg="img/insta-2.jpg">
-<div class="inside-text">
-<i class="ti-instagram"></i>
-<h5><a href="#">colorlib_Collection</a></h5>
-</div>
-</div>
-<div class="insta-item set-bg" data-setbg="img/insta-3.jpg">
-<div class="inside-text">
-<i class="ti-instagram"></i>
-<h5><a href="#">colorlib_Collection</a></h5>
-</div>
-</div>
-<div class="insta-item set-bg" data-setbg="img/insta-4.jpg">
-<div class="inside-text">
-<i class="ti-instagram"></i>
-<h5><a href="#">colorlib_Collection</a></h5>
-</div>
-</div>
-<div class="insta-item set-bg" data-setbg="img/insta-5.jpg">
-<div class="inside-text">
-<i class="ti-instagram"></i>
-<h5><a href="#">colorlib_Collection</a></h5>
-</div>
-</div>
-<div class="insta-item set-bg" data-setbg="img/insta-6.jpg">
-<div class="inside-text">
-<i class="ti-instagram"></i>
-<h5><a href="#">colorlib_Collection</a></h5>
-</div>
-</div>
-</div>
-
-
-<section class="latest-blog spad">
-<div class="container">
-<div class="row">
-<div class="col-lg-12">
-<div class="section-title">
-<h2>From The Blog</h2>
-</div>
-</div>
-</div>
-<div class="row">
-<div class="col-lg-4 col-md-6">
-<div class="single-latest-blog">
-<img src="img/latest-1.jpg" alt="">
-<div class="latest-text">
-<div class="tag-list">
-<div class="tag-item">
-<i class="fa fa-calendar-o"></i>
-May 4,2019
-</div>
-<div class="tag-item">
-<i class="fa fa-comment-o"></i>
-5
-</div>
- </div>
-<a href="#">
-<h4>The Best Street Style From London Fashion Week</h4>
-</a>
-<p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat </p>
-</div>
-</div>
-</div>
-<div class="col-lg-4 col-md-6">
-<div class="single-latest-blog">
-<img src="img/latest-2.jpg" alt="">
-<div class="latest-text">
-<div class="tag-list">
-<div class="tag-item">
-<i class="fa fa-calendar-o"></i>
-May 4,2019
-</div>
-<div class="tag-item">
-<i class="fa fa-comment-o"></i>
-5
-</div>
-</div>
-<a href="#">
-<h4>Vogue's Ultimate Guide To Autumn/Winter 2019 Shoes</h4>
-</a>
-<p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat </p>
-</div>
-</div>
-</div>
-<div class="col-lg-4 col-md-6">
-<div class="single-latest-blog">
-<img src="img/latest-3.jpg" alt="">
-<div class="latest-text">
-<div class="tag-list">
-<div class="tag-item">
-<i class="fa fa-calendar-o"></i>
-May 4,2019
-</div>
-<div class="tag-item">
-<i class="fa fa-comment-o"></i>
-5
-</div>
-</div>
-<a href="#">
-<h4>How To Brighten Your Wardrobe With A Dash Of Lime</h4>
-</a>
-<p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat </p>
-</div>
-</div>
-</div>
-</div>
-<div class="benefit-items">
-<div class="row">
-<div class="col-lg-4">
-<div class="single-benefit">
-<div class="sb-icon">
-<img src="img/icon-1.png" alt="">
-</div>
-<div class="sb-text">
-<h6>Free Shipping</h6>
-<p>For all order over 99$</p>
-</div>
-</div>
-</div>
-<div class="col-lg-4">
-<div class="single-benefit">
-<div class="sb-icon">
-<img src="img/icon-2.png" alt="">
-</div>
-<div class="sb-text">
-<h6>Delivery On Time</h6>
-<p>If good have prolems</p>
-</div>
-</div>
-</div>
-<div class="col-lg-4">
-<div class="single-benefit">
-<div class="sb-icon">
-<img src="img/icon-1.png" alt="">
-</div>
-<div class="sb-text">
-<h6>Secure Payment</h6>
-<p>100% secure payment</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-
-
-<div class="partner-logo">
-<div class="container">
-<div class="logo-carousel owl-carousel">
-<div class="logo-item">
-<div class="tablecell-inner">
-<img src="img/logo-carousel/logo-1.png" alt="">
-</div>
-</div>
-<div class="logo-item">
-<div class="tablecell-inner">
-<img src="img/logo-carousel/logo-2.png" alt="">
-</div>
-</div>
-<div class="logo-item">
-<div class="tablecell-inner">
-<img src="img/logo-carousel/logo-3.png" alt="">
-</div>
-</div>
-<div class="logo-item">
-<div class="tablecell-inner">
-<img src="img/logo-carousel/logo-4.png" alt="">
-</div>
-</div>
-<div class="logo-item">
-<div class="tablecell-inner">
-<img src="img/logo-carousel/logo-5.png" alt="">
-</div>
-</div>
-</div>
-</div>
-</div>
-
-
-<footer class="footer-section">
-<div class="container">
-<div class="row">
-<div class="col-lg-3">
-<div class="footer-left">
-<div class="footer-logo">
-<a href="#"><img src="img/footer-logo.png" alt=""></a>
-</div>
-<ul>
-<li>Address: 60-49 Road 11378 New York</li>
-<li>Phone: +65 11.188.888</li>
-<li>Email: <a href="https://preview.colorlib.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="93fbf6fffffcbdf0fcfffce1fffaf1d3f4fef2faffbdf0fcfe">[email&#160;protected]</a></li>
-</ul>
-<div class="footer-social">
-<a href="#"><i class="fa fa-facebook"></i></a>
-<a href="#"><i class="fa fa-instagram"></i></a>
-<a href="#"><i class="fa fa-twitter"></i></a>
-<a href="#"><i class="fa fa-pinterest"></i></a>
-</div>
-</div>
-</div>
-<div class="col-lg-2 offset-lg-1">
-<div class="footer-widget">
-<h5>Information</h5>
-<ul>
-<li><a href="#">About Us</a></li>
-<li><a href="#">Checkout</a></li>
-<li><a href="#">Contact</a></li>
-<li><a href="#">Serivius</a></li>
-</ul>
-</div>
-</div>
-<div class="col-lg-2">
-<div class="footer-widget">
- <h5>My Account</h5>
-<ul>
-<li><a href="#">My Account</a></li>
-<li><a href="#">Contact</a></li>
-<li><a href="#">Shopping Cart</a></li>
-<li><a href="#">Shop</a></li>
-</ul>
-</div>
-</div>
-<div class="col-lg-4">
-<div class="newslatter-item">
-<h5>Join Our Newsletter Now</h5>
-<p>Get E-mail updates about our latest shop and special offers.</p>
-<form action="#" class="subscribe-form">
-<input type="text" placeholder="Enter Your Mail">
-<button type="button">Subscribe</button>
-</form>
-</div>
-</div>
-</div>
-</div>
-<div class="copyright-reserved">
-<div class="container">
-<div class="row">
-<div class="col-lg-12">
-<div class="copyright-text">
-
-Copyright &copy;<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com/" target="_blank">Colorlib</a>
-
-</div>
-<div class="payment-pic">
-<img src="img/payment-method.png" alt="">
-</div>
-</div>
-</div>
-</div>
-</div>
-</footer>
-
-
-<script src="js/jquery-3.3.1.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery-ui.min.js"></script>
-<script src="js/jquery.countdown.min.js"></script>
-<script src="js/jquery.nice-select.min.js"></script>
-<script src="js/jquery.zoom.min.js"></script>
-<script src="js/jquery.dd.min.js"></script>
-<script src="js/jquery.slicknav.js"></script>
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/main.js"></script>
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-23581568-13');
-</script>
-
 </body>
 
 

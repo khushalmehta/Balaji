@@ -1,7 +1,7 @@
 <?php
 require 'Admin/config.php';
 $cat=$_GET['pcategory'];
-echo $cat;
+
 	if($cat=="all"){
 		$query="select * from products";
 		$display_product=mysqli_query($con,$query);

@@ -25,15 +25,15 @@
               <li><a href="broucher.php?file=shree-balaji-enterprises" target="_blank">Download Broucher</a></li>
             </ul>
           </li>
-          <li><a href="products.php">Our Products</a>
+          <li><a href="products.php?pcategory=all">Our Products</a>
             <ul class="dropdown" id="dropdown">
-              <li><a href="products.php">All Products</a></li>
+              <li><a href="products.php?pcategory=all">All Products</a></li>
               <?php
-              while($cat=mysqli_fetch_array($select_cat)){
-                $select_prod="select * from products where pcategory like '".$cat['pcategory']."'";
+              while($c=mysqli_fetch_array($select_cat)){
+                $select_prod="select * from products where pcategory like '".$c['pcategory']."'";
                 $select_prod=mysqli_query($con,$select_prod);
             ?>
-              <li><a href="#" ><?php echo $cat['pcategory'];?></a>
+              <li><a href="#" ><?php echo $c['pcategory'];?></a>
                 <ul id="dropdown">
                   <?php
                 while($prod=mysqli_fetch_array($select_prod)){
